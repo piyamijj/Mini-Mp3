@@ -6,9 +6,9 @@ android {
     defaultConfig {
         applicationId 'com.piyami.minimp3'
         minSdk 16
-        targetSdk 28
-        versionCode 1
-        versionName '1.0'
+        targetSdk 33
+        versionCode 2
+        versionName '1.1'
     }
     signingConfigs {
         releaseKey {
@@ -30,6 +30,5 @@ android {
             signingConfig System.getenv('KEYSTORE_PATH') ? signingConfigs.releaseKey : signingConfigs.debug
         }
     }
-    lint { disable 'ExpiredTargetSdkVersion' }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
 }
